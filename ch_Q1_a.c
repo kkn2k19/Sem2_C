@@ -11,5 +11,5 @@ int main()
   int l = 40;
   int b = 30;
   float area = l*b;
-  printf("Area of Rectangle : %f", area);
+  printf("Area of Rectangle : %f\n", area);
 }
