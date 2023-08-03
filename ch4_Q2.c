@@ -8,7 +8,7 @@ int main ()
   int n;
   printf("Enter n : ");
   scanf("%d", &n);
-  for (i = n; i > 0; i--) {
+  for (i = 10; i > 0; i--) {
     printf("%d x %d = %d\n", n, i, n*i);
   }
   return 0;
