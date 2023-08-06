@@ -12,5 +12,22 @@ More than 5000           20% of Sale Amount
 
 int main () 
 {
-  NOT COMPLETE YET!!!!
+  float sa; 
+  float com; 
+  printf("Provide Sale Amount : ");
+  scanf("%f", &sa);
+  if (sa < 500) {
+    com = 35;
+  }
+  else if (sa >= 500 && sa <= 2000) {
+    com = 0.1*sa;
+  } 
+  else if (sa >= 2001 && sa <= 5000) {
+    com = 0.15*sa;
+  }
+  else {
+    com = 0.2*sa;
+  }
+  printf("Commission : %f\n", com);
+  return 0;
 }
