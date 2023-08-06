@@ -6,6 +6,8 @@ Up to 10 km                         Fixed charge ₹80
 11 km to 20 km                            ₹6/km
 21 km to 30 km                            ₹5/km
 31 km and above                           ₹4/km 
+Design a program to input distance travelled by the passenger. Calculate and display the
+fare to be paid.
 */
 
 #include <stdio.h>
