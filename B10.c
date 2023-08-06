@@ -18,12 +18,15 @@ int main ()
     if(a < 90 && b < 90 && c < 90) {
       printf("Acute Angled Triangle.\n");
     }
-    else if (a == 90 || b == 90 || c == 90) {
+    else if (a == 90 || b == 90 || c == 90){
       printf("Right Angled Triangle.\n");
-    } 
+    }
     else {
       printf("Obtuse Angle Triangle.\n");
     }
   }
+   else {
+      printf("Triangle not possible.\n");
+   }
   return 0;
 }
