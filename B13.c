@@ -14,13 +14,27 @@ Entered numbers are mixed numbers.
 int main () 
 {
   int a, b, c;
+  int gr;           //greatest
   printf("Provide Three Numbers negative or positive : ");
   scanf("%d%d%d", &a, &b, &c);
-  if (a > b && a > c){
-    if (a > 0 )
-
-
-NOT COMPLETE YET !!!!
-      
+  if (a > b && a > c) {
+    gr = a;
   }
+  else if (b > a && b > c) {
+    gr = b;
+  }
+  else {
+    gr = c;
+  }
+  printf("Greatest : %d\n", gr);
+  if (a > 0 && b > 0 && c > 0) {
+    printf("All are Positive.\n");
+  }
+  else if (a < 0 && b < 0 && c < 0) {
+    printf("All are negative.\n");
+  }
+  else {
+    printf("Mixed numbers.\n");
+  }
+  return 0;
 }
