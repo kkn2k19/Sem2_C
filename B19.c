@@ -16,9 +16,50 @@ by a customer along with his name.
 
 int main () 
 {
-
-
-NOT COMPLETE YET!!!!!!
-
-
+  char name[20];
+  printf("Enter name : ");
+  gets(name);
+  float a;
+  printf("Enter Amount : ");
+  scanf("%f", &a);
+  char type;
+  printf("Type of Purchase (L or D) : ");
+  scanf("%c", type);
+  float dis;
+  switch (type){
+    case 'L' : 
+             if (a <= 25000) {
+               dis = 0;
+             }
+             else if (a >= 25001 && a <= 50000) {
+               dis = 0.05*a;
+             }
+             else if (a >= 50001 && a <= 100000) {
+               dis = 0.075*a;
+             }
+             else {
+               dis = 0.1*a;
+             }
+             break;
+    case 'D' : 
+             if (a <= 25000) {
+               dis = 0.05*a;
+             }
+             else if (a >= 25001 && a <= 50000) {
+               dis = 0.075*a;
+             }
+             else if (a >= 50001 && a <= 100000) {
+               dis = 0.1*a;
+             }
+             else {
+               dis = 0.15*a;
+             }
+             break;
+    default :
+            printf("Please provide type in Block letters.\n");
+  }
+  printf("Customer Name : ");
+  puts(name);
+  printf("Net Amount : %f\n", a - dis);
+  return 0;
 }
