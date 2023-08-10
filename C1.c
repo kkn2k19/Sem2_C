@@ -13,4 +13,28 @@ Total number of “ODD” numbers: 2
 Total number of “EVEN” numbers:8 
 */
 
-NOT COMPLETE YET!!!!
+#include <stdio.h>
+
+int main () 
+{
+  int n = 10;
+  printf("Provide 10 numbers : ");
+  int i;
+  int arr[12];
+  int odd;
+  int even;
+  for (i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
+  }
+  for (i = 0; i < n; i++) {
+    if (arr[i]%2 == 0) {
+       even++;
+    }
+    else {
+       odd++;
+    }
+  }
+  printf("Total number of "EVEN" number : %d\n", even);
+  printf("Total number of "ODD" number : %d\n", odd);
+  return 0;
+}
