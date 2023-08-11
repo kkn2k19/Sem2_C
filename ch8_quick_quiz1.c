@@ -3,6 +3,7 @@ Create a String using "" and prints its content a loop.
 */
 
 #include <stdio.h>
+#include <string.h>
 
 int main () 
 {
