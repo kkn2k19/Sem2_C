@@ -12,23 +12,29 @@ Expected Output :
 
 #include <stdio.h>
 
-int main () 
+int main()
 {
-  int i;
-  int c = 0;
-  printf("Provide n : ");
-  scanf("%d", &n);
-  for (i = 2; i < n; i++) {
-    if (n%i == 0) {
-      c++;
-      break;
+    int n;
+    int i;
+    printf("Enter n : ");
+    scanf("%d", &n);
+    int flag=0;
+    if (n==1){
+        printf("%d is neither Prime nor Composite.\n", n);
+        return;
+    }else {
+        for (i=2; i<n; i++){
+                if ((n%i)==0) {
+                    flag=1;
+                    break;
+                }
+        }
+        if (flag==0) {
+                printf("%d is a Prime Number.\n", n);
+        }
+        else {
+                printf("%d is not a Prime Number.\n", n);
+        }
+        return 0;
     }
-  }
-  if (c == 0) {
-   printf("%d is a PRIME NUMBER.\n", n);
-  }
-  else {
-   printf("%d is a not a PRIME NUMBER.\n", n);
-  }
-  return 0;
 }
