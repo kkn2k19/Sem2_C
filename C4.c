@@ -8,19 +8,25 @@ Expected Output :
 
 #include <stdio.h>
 
-int main () 
+int main()
 {
-  int M;
-  int N;
-  int i;
-  int j;
-  int c = 0;
-  printf("Provide M and N : ");
-  scanf("%d %d", &M, &N);
-  for (i = M, i <= N; i++) {
-    for (j = 2; j < i; j++) {
-      printf("[%d] ", i);
+    int m, n;
+    printf("Enter m and n : ");
+    scanf("%d%d", &m, &n);
+    int i;
+    int j;
+    int flag;
+    for(i=m; i<=n; i++){
+        flag=0;
+        for (j=2; j<i; j++) {
+            if ((i%j)==0) {
+                flag=1;
+                break;
+            }
+        }
+        if (flag==0){
+            printf("[%d] ", i);
+        }
     }
-  }
-  return 0;
+    return 0;
 }
