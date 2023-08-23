@@ -7,7 +7,7 @@ Expected Output :
 
 Enter a number: 11
 Expected Output :
-11 is NOT PRIME
+11 is  PRIME
 */
 
 #include <stdio.h>
