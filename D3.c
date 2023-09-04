@@ -1,6 +1,3 @@
-
-
-
 /*
 Write a program in C to accept an Integer number as input and perform the following
 operations on that integer number
@@ -58,14 +55,9 @@ int main ()
     }
     int arm_sum=0;
     i=n;
-    int k;
     while (i>0) {
         d=i%10;
-        k=1;
-        for (i=1; i<=c; i++) {
-            k=k*d;
-        }
-        arm_sum=arm_sum+k;
+        arm_sum=arm_sum+pow(d, c);
         i=i/10;
     }
     if (n == arm_sum) {
